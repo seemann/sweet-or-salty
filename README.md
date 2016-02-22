@@ -1,4 +1,4 @@
-# TubeTV
+# Sweet or Salty
 
 > A Vue.js project
 
