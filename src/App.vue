@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <h1>Sweet or Salty</h1>
-    <items></items>
+    <search></search>
+    <results></results>
   </div>
 </template>
 
@@ -12,11 +13,13 @@
 </style>
 
 <script>
-  import Items from './components/Items'
+  import Search from './components/Search'
+  import Results from './components/Results'
 
   export default {
     components: {
-      Items
+      Search,
+      Results
     }
   }
 </script>
