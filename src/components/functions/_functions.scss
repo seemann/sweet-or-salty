@@ -1,0 +1,9 @@
+/* ===================================
+   Functions
+   =================================== */
+
+/* Convert px to em
+   =================================== */
+@function calcRem($target, $context: $font-size-init) {
+  @return ($target / $context) + 0rem;
+}
