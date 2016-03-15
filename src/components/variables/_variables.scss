@@ -1,5 +1,5 @@
 /* ===================================
-   Variables
+   Global variables
    =================================== */
 
 /* Colors
@@ -15,5 +15,5 @@ $color-bg: $color-initial !default;
 
 /* Fonts
    =================================== */
-$font-inital: Lato, sans-serif;
-$font-size-init: 16px;
+$font-inital: Lato, sans-serif !default;
+$font-size-init: 16px !default;

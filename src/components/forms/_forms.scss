@@ -14,11 +14,10 @@ select {
   appearance: none;
   background-color: transparent;
   border: calcRem(1px) solid $color-secondary;
-  border-radius: calcRem(4px);
   box-shadow: none;
   height: calcRem(41px);
   margin-bottom: $margin-space-3;
-  padding: $padding-space-1 $padding-space-2;
+  padding: $padding-space-1 $padding-space-1;
   width: 100%;
 
   &:focus {

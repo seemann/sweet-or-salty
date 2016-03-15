@@ -21,18 +21,21 @@
   @import '/components/margin/margin';
   @import '/components/padding/padding';
   @import '/components/base/base';
+  @import '/components/forms/forms';
   @import '/components/typography/typography';
   @import '/components/grid/grid';
+  @import '/components/lists/lists';
+  @import '/components/media/media';
 </style>
 
 <script>
-  import Search from './components/search/Search'
-  import Results from './components/results/Results'
+  import search from './components/search/search'
+  import results from './components/results/results'
 
   export default {
     components: {
-      Search,
-      Results
+      search,
+      results
     }
   }
 </script>

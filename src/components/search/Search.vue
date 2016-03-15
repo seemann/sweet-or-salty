@@ -7,10 +7,6 @@
 
 <style lang="sass" scoped>
   @import '../variables/variables';
-  @import '../functions/functions';
-  @import '../margin/margin';
-  @import '../padding/padding';
-  @import '../forms/forms';
 </style>
 
 <script>
