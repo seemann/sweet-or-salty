@@ -13,7 +13,7 @@ textarea,
 select {
   appearance: none;
   background-color: transparent;
-  border: calcRem(1px) solid $color-secondary;
+  border: calcRem(1px) solid currentColor;
   box-shadow: none;
   height: calcRem(41px);
   margin-bottom: $margin-space-3;
@@ -21,7 +21,7 @@ select {
   width: 100%;
 
   &:focus {
-    border: calcRem(1px) solid $color-quaternary;
+    border-color: $color-quaternary;
     outline: 0;
   }
 }

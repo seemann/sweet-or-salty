@@ -17,3 +17,7 @@ new Vue({
     App
   }
 })
+
+Vue.transition('bounce', {
+  enterClass: 'bounceInDown'
+})

@@ -4,16 +4,18 @@
     <li v-for="result in results" v-if="result.type === 'show'">
       <result
         :type="result.type"
+        :year="result.show.year"
         :title="result.show.title"
-        :image="result.show.images.poster.thumb">
+        :image="result.show.images.poster.medium">
       </result>
     </li>
 
     <li v-for="result in results" v-if="result.type === 'movie'">
       <result
         :type="result.type"
+        :year="result.movie.year"
         :title="result.movie.title"
-        :image="result.movie.images.poster.thumb">
+        :image="result.movie.images.poster.medium">
       </result>
     </li>
 

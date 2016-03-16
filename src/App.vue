@@ -17,6 +17,7 @@
   @import '/components/normalize/normalize';
   @import '/components/variables/variables';
   @import '/components/functions/functions';
+  @import '../node_modules/animate.css/animate.min.css';
   @import '/components/layout/layout';
   @import '/components/margin/margin';
   @import '/components/padding/padding';
