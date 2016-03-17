@@ -1,0 +1,44 @@
+/* ===================================
+   Transitions
+   =================================== */
+
+/* Base
+   =================================== */
+[class*='-transition'] {
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+}
+
+/* Slide in
+   =================================== */
+.slideIn {
+  animation-name: slideIn;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Slide out down
+   =================================== */
+.slideOutDown {
+  animation-name: slideOutDown;
+}
+
+@keyframes slideOutDown {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
