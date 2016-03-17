@@ -19,13 +19,14 @@
   @import '../variables/variables';
 
   .result {
-    background-color: $color-bg;
+    background-color: $color-initial;
     box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.5);
     position: relative;
     overflow: hidden;
   }
 
   .result__title {
+    color: $color-tertiary;
     position: relative;
     z-index: 1;
   }

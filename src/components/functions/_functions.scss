@@ -4,6 +4,6 @@
 
 /* Convert px to em
    =================================== */
-@function calcRem($target, $context: $font-size-init) {
+@function calcRem($target, $context: $font-size-inital) {
   @return ($target / $context) + 0rem;
 }
