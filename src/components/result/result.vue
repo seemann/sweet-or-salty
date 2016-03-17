@@ -1,7 +1,17 @@
 <template>
-  <div class="result p1 animated" transition="bounce">
-    <img class="result__img" :src="image" alt="" @load="ink" />
-    <h3 class="result__title">{{ title }} <small>{{ type }}, {{ year }}</small></h3>
+  <div class="result p1" v-if="result.show">
+    <img class="result__img" :src="result.show.images.fanart.medium" alt="" />
+    <h3 class="result__title">
+      {{ result.show.title }}
+      <small>{{ result.type }}, {{ result.show.year }}</small>
+    </h3>
+  </div>
+  <div class="result p1" v-if="result.movie">
+    <img class="result__img" :src="result.movie.images.fanart.medium" alt="" />
+    <h3 class="result__title">
+      {{ result.movie.title }}
+      <small>{{ result.type }}, {{ result.movie.year }}</small>
+    </h3>
   </div>
 </template>
 
@@ -9,6 +19,8 @@
   @import '../variables/variables';
 
   .result {
+    background-color: $color-bg;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.5);
     position: relative;
     overflow: hidden;
   }
@@ -20,7 +32,6 @@
 
   .result__img {
     height: auto;
-    filter: opacity(0.4);
     left: 0;
     max-width: 100%;
     position: absolute;
@@ -31,14 +42,6 @@
 
 <script>
   export default {
-    props: ['type', 'year', 'title', 'image'],
-
-    methods: {
-      ink: function () {
-      },
-      foo: function () {
-        console.log(typeof this.image)
-      }
-    }
+    props: ['result']
   }
 </script>
