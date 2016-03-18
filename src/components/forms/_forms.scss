@@ -12,17 +12,18 @@ input[type='url'],
 textarea,
 select {
   appearance: none;
-  background-color: $color-tertiary;
+  background-color: #fff;
   border: calcRem(1px) solid currentColor;
+  border-radius: 3px;
   box-shadow: none;
-  color: $color-initial;
+  color: $color-text;
   height: calcRem(41px);
   margin-bottom: $margin-space-3;
   padding: $padding-space-1 $padding-space-1;
   width: 100%;
 
   &:focus {
-    border-color: $color-initial;
+    border-color: $color-primary;
     outline: 0;
   }
 }

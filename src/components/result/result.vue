@@ -19,14 +19,16 @@
   @import '../variables/variables';
 
   .result {
-    background-color: $color-initial;
-    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.5);
     position: relative;
     overflow: hidden;
   }
 
   .result__title {
-    color: $color-tertiary;
+    color: $color-primary;
     position: relative;
     z-index: 1;
   }

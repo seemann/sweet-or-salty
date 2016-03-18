@@ -1,7 +1,7 @@
 <template>
-  <ul class="results list-reset">
+  <ul class="results list-reset mxn2">
 
-    <li class="mb2" v-for="result in results" transition="slide" stagger="60">
+    <li class="mb2 px2" v-for="result in results" transition="slide" stagger="60">
       <result :result="result"></result>
     </li>
 

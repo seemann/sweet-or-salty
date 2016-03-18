@@ -4,14 +4,13 @@
 
 /* Colors
    =================================== */
-$color-initial: #fff !default;
-$color-primary: #FF304F !default;
-$color-secondary: #002651 !default;
-$color-tertiary: #775ADA !default;
-$color-quaternary: #28C7FA !default;
+$color-initial: rgb(247, 247, 247) !default;
+$color-primary: rgb(0, 99, 216) !default;
+$color-secondary:  rgb(255, 48, 79) !default;
+$color-tertiary: rgb(119, 90, 218) !default;
 
-$color-text: $color-initial !default;
-$color-bg: $color-secondary !default;
+$color-text: rgba(0, 0, 0, 0.7) !default;
+$color-bg: $color-initial !default;
 
 /* Fonts
    =================================== */
