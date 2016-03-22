@@ -2,7 +2,14 @@
   <div id="app" class="mx4">
     <h1>Sweet or Salty</h1>
     <search></search>
-    <results></results>
+    <div class="clearfix mxn1">
+      <div class="col col-4 px1">
+        <results></results>
+      </div>
+      <div class="col col-8 px1">
+        Something here
+      </div>
+    </div>
   </div>
 </template>
 

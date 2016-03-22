@@ -1,7 +1,7 @@
 <template>
-  <ul class="results list-reset mxn2">
+  <ul class="results list-reset">
 
-    <li class="mb2 px2" v-for="result in results" transition="slide" stagger="60">
+    <li class="results__item mb2" v-for="result in results" transition="slide" stagger="60">
       <result :result="result"></result>
     </li>
 
@@ -10,10 +10,6 @@
 
 <style lang="sass" scoped>
   @import '../variables/variables';
-
-  .results {
-    overflow: hidden;
-  }
 </style>
 
 <script>
