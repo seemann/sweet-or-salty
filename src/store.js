@@ -5,11 +5,13 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    results: []
+    results: [],
+    detail: []
   },
 
   actions: {
-    search: 'SEARCH'
+    search: 'SEARCH',
+    detail: 'DETAIL'
   },
 
   mutations: {
@@ -21,6 +23,9 @@ export default new Vuex.Store({
       function (response) {
         console.log()
       })
+    },
+    DETAIL (state, detail) {
+      state.detail = detail
     }
   }
 })

@@ -1,8 +1,8 @@
 <template>
-  <ul class="results list-reset">
+  <ul class="result__list list-reset">
 
     <li class="results__item mb2" v-for="result in results" transition="slide" stagger="60">
-      <result :result="result"></result>
+      <result-item :result="result"></result-item>
     </li>
 
   </ul>
@@ -13,17 +13,12 @@
 </style>
 
 <script>
-  import store from './../../store'
-  import result from './../result/result'
+  import ResultItem from './../result-item/result-item'
 
   export default {
-    computed: {
-      results () {
-        return store.state.results
-      }
-    },
+    props: ['results'],
     components: {
-      result
+      ResultItem
     }
   }
 </script>

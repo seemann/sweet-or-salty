@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueResource from 'vue-resource'
 import App from './App'
 
+Vue.config.debug = true
+
 Vue.use(VueResource)
 
 /* Set global Vue resource options */
