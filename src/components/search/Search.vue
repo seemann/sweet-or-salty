@@ -10,11 +10,13 @@
 </style>
 
 <script>
-  import * as actions from './../../actions'
+  import { search } from './../../actions'
 
   export default {
     vuex: {
-      actions: actions
+      actions: {
+        search
+      }
     },
     methods: {
       fireSearch: function (event) {

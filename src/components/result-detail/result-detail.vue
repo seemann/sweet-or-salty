@@ -10,12 +10,10 @@
 </style>
 
 <script>
-  import store from './../../store'
-
   export default {
-    computed: {
-      detail () {
-        return store.state.detail
+    vuex: {
+      getters: {
+        detail: state => state.detail
       }
     }
   }
