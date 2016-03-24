@@ -1,7 +1,7 @@
 <template>
   <form class="search" @submit.prevent>
     <label for="search">Search</label>
-    <input :value="searchQuery" @keyup.enter="search" id="search" type="search">
+    <input :value="searchQuery" @keyup.enter="fireSearch" id="search" type="search">
   </form>
 </template>
 
@@ -10,12 +10,15 @@
 </style>
 
 <script>
-  import store from './../../store'
+  import * as actions from './../../actions'
 
   export default {
+    vuex: {
+      actions: actions
+    },
     methods: {
-      search: function (event) {
-        store.actions.search(event.target.value)
+      fireSearch: function (event) {
+        this.search(event.target.value)
       }
     }
   }

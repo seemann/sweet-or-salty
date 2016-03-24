@@ -14,14 +14,13 @@
 </style>
 
 <script>
-  import store from './../../store'
   import ResultList from './../result-list/result-list'
   import ResultDetail from './../result-detail/result-detail'
 
   export default {
-    computed: {
-      results () {
-        return store.state.results
+    vuex: {
+      getters: {
+        results: state => state.results
       }
     },
     components: {

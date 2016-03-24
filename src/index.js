@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueResource from 'vue-resource'
+import store from './store'
 import App from './App'
 
 Vue.config.debug = true
@@ -20,6 +21,7 @@ Vue.transition('slide', {
 /* eslint-disable no-new */
 new Vue({
   el: 'body',
+  store,
   components: {
     App
   }
