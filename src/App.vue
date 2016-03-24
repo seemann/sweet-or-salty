@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="mx4">
+  <div class="mx4">
     <h1>Sweet or Salty</h1>
     <search></search>
     <result></result>

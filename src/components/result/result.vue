@@ -4,7 +4,7 @@
       <result-list :results="results"></result-list>
     </div>
     <div class="col col-7 px1">
-      <result-detail></result-detail>
+      <router-view></router-view>
     </div>
   </div>
 </template>
