@@ -18,7 +18,7 @@ export default {
     text-align: center;
   }
 
-  .bar__title {
+  h1 {
     color: $color-primary;
     margin: 0;
   }
