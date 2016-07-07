@@ -1,16 +1,16 @@
-import Vue from 'vue'
+import Vue from 'vue';
 
-const store = {
+var store = {
   state: {
-    query: 'dfasdfaf',
-    results: []
+    query: '',
+    results: ''
   },
 
   search: function () {
     Vue.http.get(`search?type=movie,show&query=${this.state.query}`)
     .then(function (response) {
-      console.log(response);
       this.state.results = response.body;
+      console.log(this.state.results);
     },
     function (response) {
       console.log();

@@ -1,29 +1,9 @@
 <template>
   <div class="results">
     <ul>
-      <li>
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro sequi dolore, quo ratione. Quam id impedit blanditiis cumque esse sapiente nemo quisquam cum, vero voluptatum deserunt, excepturi ipsam error eius!</p>
-      </li>
-      <li>
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro sequi dolore, quo ratione. Quam id impedit blanditiis cumque esse sapiente nemo quisquam cum, vero voluptatum deserunt, excepturi ipsam error eius!</p>
-      </li>
-      <li>
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro sequi dolore, quo ratione. Quam id impedit blanditiis cumque esse sapiente nemo quisquam cum, vero voluptatum deserunt, excepturi ipsam error eius!</p>
-      </li>
-      <li>
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro sequi dolore, quo ratione. Quam id impedit blanditiis cumque esse sapiente nemo quisquam cum, vero voluptatum deserunt, excepturi ipsam error eius!</p>
-      </li>
-      <li>
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro sequi dolore, quo ratione. Quam id impedit blanditiis cumque esse sapiente nemo quisquam cum, vero voluptatum deserunt, excepturi ipsam error eius!</p>
-      </li>
-      <li>
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro sequi dolore, quo ratione. Quam id impedit blanditiis cumque esse sapiente nemo quisquam cum, vero voluptatum deserunt, excepturi ipsam error eius!</p>
+      <li v-for="result in sharedState.results">
+        <h2>{{ result.title }}</h2>
+        <p>{{ result.overview }}</p>
       </li>
     </ul>
   </div>

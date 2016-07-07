@@ -2,6 +2,7 @@
   <div class="search">
     <input class="search__textfield" type="search" name="search" :value="sharedState.query" @keyup.enter="search">
   </div>
+  {{sharedState.query}}
 </template>
 
 <script>
@@ -10,12 +11,12 @@ import store from '../store';
 export default {
   data() {
     return {
-      privateState: {},
       sharedState: store.state
     }
   },
   methods: {
     search: function(event) {
+      this.sharedState.query = event.target.value;
       store.search();
     }
   }
@@ -29,7 +30,7 @@ export default {
     font-size: 1rem;
   }
 
-  .search__textfield {
+  input[type="search"] {
     border: 4px solid currentColor;
     border-radius: $border-radius-init;
     color: $color-quaternary;
