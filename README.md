@@ -1,6 +1,6 @@
-# sweet-or-salty
+# Sweet Or Salty
 
-> A Vue.js project
+> Track your loved movies and tv shows
 
 ## Build Setup
 

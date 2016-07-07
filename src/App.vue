@@ -1,21 +1,25 @@
 <template>
   <div id="app">
-    <hello></hello>
+    <bar></bar>
+    <search></search>
+    <results></results>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello.vue'
+import Bar from './components/Bar.vue';
+import Search from './components/Search.vue';
+import Results from './components/Results.vue';
 
 export default {
   components: {
-    Hello
+    Bar,
+    Search,
+    Results
   }
 }
 </script>
 
-<style>
-body {
-  font-family: Helvetica, sans-serif;
-}
+<style lang="sass">
+  @import 'global';
 </style>
