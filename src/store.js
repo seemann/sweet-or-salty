@@ -1,20 +1,24 @@
 import Vue from 'vue';
 
-const store = {
+module.exports = {
   state: {
-    query: '',
-    results: ''
+    results: [],
+    seasons: []
   },
 
-  search() {
-    Vue.http.get(`search?type=movie,show&query=${this.state.query}`)
-    .then((response) => {
-      this.state.results = response.body;
-      console.log(this.state.results);
-    }, (response) => {
-      // error callback
-    }
-  }
-}
+  search(query) {
+    Vue.http.get(`search/show?query=${query}&extended=images`).then(response => {
+      this.state.results = response.json();
+    }, response => {
+      console.error(response.statusText);
+    });
+  },
 
-module.exports = store;
+  getSeasons(id) {
+    Vue.http.get(`shows/${id}/seasons?extended=episodes`).then(response => {
+      this.state.seasons = response.json();
+    }, response => {
+      console.error(response.statusText);
+    });
+  }
+};
