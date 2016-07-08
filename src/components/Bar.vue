@@ -19,7 +19,7 @@ export default {
   }
 
   h1 {
-    color: $color-primary;
+    color: $color-secondary;
     margin: 0;
   }
 </style>
