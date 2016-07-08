@@ -10,7 +10,7 @@ $color-bg: $color-initial;
 $font-inital: Lato, sans-serif;
 $font-primary: Galada, cursive;
 
-$border-radius-init: 4px;
+$border-radius-inital: 4px;
 
 html {
   font-size: 100%;
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background-color: $color-initial;
+  background-color: $color-quaternary;
   color: $color-text;
   font-family: $font-inital;
   font-weight: 400;
