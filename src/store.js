@@ -1,20 +1,19 @@
 import Vue from 'vue';
 
-var store = {
+const store = {
   state: {
     query: '',
     results: ''
   },
 
-  search: function () {
+  search() {
     Vue.http.get(`search?type=movie,show&query=${this.state.query}`)
-    .then(function (response) {
+    .then((response) => {
       this.state.results = response.body;
       console.log(this.state.results);
-    },
-    function (response) {
-      console.log();
-    });
+    }, (response) => {
+      // error callback
+    }
   }
 }
 

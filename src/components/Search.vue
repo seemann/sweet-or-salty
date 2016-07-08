@@ -1,8 +1,7 @@
 <template>
   <div class="search">
-    <input class="search__textfield" type="search" name="search" :value="sharedState.query" @keyup.enter="search">
+    <input type="search" name="search" :value="sharedState.query" @keyup.enter="search">
   </div>
-  {{sharedState.query}}
 </template>
 
 <script>
