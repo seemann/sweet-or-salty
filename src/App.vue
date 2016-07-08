@@ -22,4 +22,5 @@ export default {
 
 <style lang="sass">
   @import 'global';
+  @import 'button';
 </style>
