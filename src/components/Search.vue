@@ -11,15 +11,15 @@ export default {
   data() {
     return {
       sharedState: store.state
-    }
+    };
   },
   methods: {
-    search: function(event) {
+    search: event => {
       this.sharedState.query = event.target.value;
       store.search();
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
