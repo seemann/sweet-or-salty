@@ -8,19 +8,20 @@
 
 <script>
 import Bar from './components/Bar.vue';
-import Search from './components/Search.vue';
 import Results from './components/Results.vue';
+import Search from './components/Search.vue';
 
 export default {
   components: {
     Bar,
-    Search,
-    Results
+    Results,
+    Search
   }
 }
 </script>
 
 <style lang="sass">
+  @import 'variables';
   @import 'global';
   @import 'button';
 </style>
