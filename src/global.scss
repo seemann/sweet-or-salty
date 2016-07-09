@@ -1,17 +1,3 @@
-$color-initial: #fff;
-$color-primary: #FF304F;
-$color-secondary: #002651;
-$color-tertiary: #775ADA;
-$color-quaternary: #28C7FA;
-
-$color-text: $color-secondary;
-$color-bg: $color-initial;
-
-$font-inital: Lato, sans-serif;
-$font-primary: Galada, cursive;
-
-$border-radius-inital: 4px;
-
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -31,6 +17,8 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
