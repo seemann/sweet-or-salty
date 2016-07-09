@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../global';
+  @import '../variables';
 
   .search {
     font-size: 1rem;
@@ -30,12 +30,16 @@ export default {
 
   .search__field {
     background-color: rgba($color-secondary, 0.5);
-    border: 1px solid rgba($color-initial, 0.8);
+    border: 2px solid transparent;
     border-radius: $border-radius-inital;
     color: $color-initial;
     font-size: 1.5em;
-    font-weight: 700;
     padding: 0.5em;
     width: 100%;
+
+    &:focus {
+      border-color: $color-initial;
+      outline: 0;
+    }
   }
 </style>
