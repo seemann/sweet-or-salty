@@ -1,6 +1,6 @@
 <template>
-  <div class="results">
-    <hint message="Nothing found" :show="!state.results.length"></hint>
+  <hint message="Nothing found" :show="!state.results.length"></hint>
+  <div class="results" v-if="state.results.length">
     <result
       v-for="result in state.results"
       :result="result">
@@ -20,8 +20,7 @@ export default {
   },
   data() {
     return {
-      state: store.state,
-      showHint: false
+      state: store.state
     };
   }
 };

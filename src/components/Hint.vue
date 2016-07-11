@@ -5,14 +5,7 @@
 </template>
 
 <script>
-import store from './../store';
-
 export default {
-  data() {
-    return {
-      state: store.state
-    };
-  },
   props: {
     message: {
       type: String

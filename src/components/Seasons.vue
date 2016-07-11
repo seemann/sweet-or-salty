@@ -58,7 +58,7 @@ export default {
 
     thead > tr > th {
       background-color: darken($color-quaternary, 40%);
-      padding: 1em; /* 32px */
+      padding: 0.5em 2em; /* 32px */
     }
 
     tbody > tr {
@@ -72,7 +72,7 @@ export default {
       }
 
       > td {
-        padding: 1em; /* 32px */
+        padding: 0.5em 2em; /* 32px */
       }
     }
   }

@@ -1,11 +1,11 @@
 <template>
-  <div class="result" transition="fade">
+  <div class="result" transition="slide">
     <div class="result__item">
       <div class="result__preview">
         <img class="result__media" :src="result.show.images.fanart.medium" alt="" />
         <div class="result__overlay">
           <div class="result__media">
-            <div class="result__media__object">
+            <div class="result__media__object" v-if="result.show.images.poster.thumb">
               <img class="result__poster" :src="result.show.images.poster.thumb" />
             </div>
             <div class="result__media__body">
