@@ -15,6 +15,7 @@ export default {};
 
   .bar {
     font-size: 1rem;
+    padding: 3em; /* 48px */
     text-align: center;
   }
 
