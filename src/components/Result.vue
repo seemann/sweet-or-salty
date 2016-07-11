@@ -1,5 +1,5 @@
 <template>
-  <div class="result" transition="stagger">
+  <div class="result" transition="fade">
     <div class="result__item">
       <div class="result__preview">
         <img class="result__media" :src="result.show.images.fanart.medium" alt="" />
@@ -11,12 +11,12 @@
             <div class="result__media__body">
               <h2 class="result__title">{{ result.show.title }}</h2>
               <div class="result__year">{{ result.show.year }}</div>
-              <button class="button button--primary" type="button" @click="showSeasons = true">Seasons</button>
+              <button class="button button--primary" type="button" @click="triggerSeason()">Seasons</button>
             </div>
           </div>
         </div>
       </div>
-      <seasons :id="result.show.ids.trakt" v-if="showSeasons"></seasons>
+      <seasons :show-id="result.show.ids.trakt" :show="showSeasons"></seasons>
     </div>
   </div>
 </template>
@@ -35,6 +35,15 @@ export default {
   },
   props: {
     result: Object
+  },
+  methods: {
+    triggerSeason() {
+      if (this.showSeasons === false) {
+        this.showSeasons = true;
+      } else {
+        this.showSeasons = false;
+      }
+    }
   }
 };
 </script>
@@ -45,7 +54,7 @@ export default {
 
   .result {
     border: 1px solid rgba($color-initial, 0.4);
-    border-radius: $border-radius-inital;
+    border-radius: $border-radius-initial;
     color: $color-initial;
     font-size: 1rem;
     margin: 2em 0;
