@@ -16,7 +16,7 @@
           </div>
         </div>
       </div>
-      <seasons :item="result.show.ids.trakt" v-if="showSeasons"></seasons>
+      <seasons :id="result.show.ids.trakt" v-if="showSeasons"></seasons>
     </div>
   </div>
 </template>

@@ -1,5 +1,8 @@
 <template>
   <div class="results">
+    <div v-if="state.results.length === 0">
+      Nothing found
+    </div>
     <result
       v-for="result in state.results"
       :result="result">

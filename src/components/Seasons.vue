@@ -1,18 +1,29 @@
 <template>
   <div class="seasons">
     {{id}}
+    <button type="button" @click="showFoo()">Foo</button>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      foo: 'foo'
+    };
+  },
   props: {
-    item: {
+    id: {
       type: Number
     }
   },
   ready: () => {
-    console.log(this.item);
+    console.log(this);
+  },
+  medthods: {
+    showFoo() {
+      console.log(this);
+    }
   }
 };
 </script>
