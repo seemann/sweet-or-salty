@@ -1,8 +1,6 @@
 <template>
   <div class="results">
-    <div v-if="state.results.length === 0">
-      Nothing found
-    </div>
+    <hint message="Nothing found" :show="!state.results.length"></hint>
     <result
       v-for="result in state.results"
       :result="result">
@@ -13,14 +11,17 @@
 <script>
 import store from './../store';
 import Result from './Result.vue';
+import Hint from './Hint.vue';
 
 export default {
   components: {
-    Result
+    Result,
+    Hint
   },
   data() {
     return {
-      state: store.state
+      state: store.state,
+      showHint: false
     };
   }
 };
