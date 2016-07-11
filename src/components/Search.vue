@@ -31,7 +31,7 @@ export default {
   .search__field {
     background-color: rgba($color-secondary, 0.5);
     border: 2px solid transparent;
-    border-radius: $border-radius-inital;
+    border-radius: $border-radius-initial;
     color: $color-initial;
     font-size: 1.5em;
     padding: 0.5em;
