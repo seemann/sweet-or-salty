@@ -33,8 +33,8 @@ export default {
     border: 1px solid transparent;
     border-radius: $border-radius-initial;
     color: $color-initial;
-    font-size: 1.5em;
-    padding: 0.5em;
+    font-size: 1.5em; /* 24px */
+    padding: 0.5em; /* 12px */
     width: 100%;
 
     &:focus {

@@ -29,7 +29,7 @@ export default {
     background-color: $color-tertiary;
     color: $color-initial;
     font-size: 1rem;
-    padding: 1em; /* 48px */
+    padding: 1em; /* 16px */
     text-align: center;
   }
 
@@ -52,7 +52,7 @@ export default {
   }
 
   .bar__title {
-    font-size: 2em;
+    font-size: 2em; /* 32px */
     line-height: 1.1;
     margin: 0;
   }

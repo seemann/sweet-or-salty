@@ -57,7 +57,7 @@ export default {
     border-radius: $border-radius-initial;
     color: $color-initial;
     font-size: 1rem;
-    margin: 2em 0;
+    margin: 2em 0; /* 32px */
   }
 
   .result__preview {
@@ -108,7 +108,7 @@ export default {
   }
 
   .result__year {
-    margin-bottom: 1em;
+    margin-bottom: 1em; /* 16px */
   }
 
   .result__poster {

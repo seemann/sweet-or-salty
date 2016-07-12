@@ -23,7 +23,7 @@ export default {
   .hint {
     background-color: $color-tertiary;
     border-radius: $border-radius-initial;
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* 24px */
     margin: 2em 0; /* 48px */
     padding: 1em; /* 24px */
     text-align: center;
