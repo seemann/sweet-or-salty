@@ -1,5 +1,5 @@
 <template>
-  <div class="hint" v-if="show">
+  <div class="hint" v-if="show" transition="fade">
     {{message}}
   </div>
 </template>
@@ -19,6 +19,7 @@ export default {
 
 <style lang="sass" scoped>
   @import '../variables';
+  @import '../animations';
 
   .hint {
     background-color: $color-tertiary;

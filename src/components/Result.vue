@@ -2,21 +2,21 @@
   <div class="result" transition="slide">
     <div class="result__item">
       <div class="result__preview">
-        <img class="result__media" :src="result.show.images.fanart.medium" alt="" />
+        <img class="result__media" :src="result.images.fanart.medium" alt="" />
         <div class="result__overlay">
           <div class="result__media">
-            <div class="result__media__object" v-if="result.show.images.poster.thumb">
-              <img class="result__poster" :src="result.show.images.poster.thumb" />
+            <div class="result__media__object" v-if="result.images.poster.thumb">
+              <img class="result__poster" :src="result.images.poster.thumb" />
             </div>
             <div class="result__media__body">
-              <h2 class="result__title">{{ result.show.title }}</h2>
-              <div class="result__year">{{ result.show.year }}</div>
+              <h2 class="result__title">{{ result.title }}</h2>
+              <div class="result__year">{{ result.year }}</div>
               <button class="button button--primary" type="button" @click="triggerSeason()">Seasons</button>
             </div>
           </div>
         </div>
       </div>
-      <seasons :result-id="result.show.ids.trakt" :show="showSeasons"></seasons>
+      <seasons :result-id="result.ids.trakt" :show="showSeasons"></seasons>
     </div>
   </div>
 </template>
@@ -61,7 +61,6 @@ export default {
   }
 
   .result__preview {
-    background-color: $color-secondary;
     min-height: 220px;
     position: relative;
 

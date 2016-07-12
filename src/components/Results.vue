@@ -3,7 +3,7 @@
   <div class="results" v-if="state.results.length">
     <result
       v-for="result in state.results"
-      :result="result">
+      :result="result.show">
     </result>
   </div>
 </template>
@@ -22,6 +22,11 @@ export default {
     return {
       state: store.state
     };
+  },
+  route: {
+    data({to}) {
+      store.search(to.params.query);
+    }
   }
 };
 </script>
