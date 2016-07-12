@@ -2,8 +2,7 @@ import Vue from 'vue';
 
 module.exports = {
   state: {
-    results: [],
-    seasons: []
+    results: []
   },
 
   search(query) {

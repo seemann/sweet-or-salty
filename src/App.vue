@@ -24,7 +24,6 @@ export default {
   },
   data() {
     return {
-      state: store.state,
       showHint: false
     };
   }
@@ -33,6 +32,6 @@ export default {
 
 <style lang="sass">
   @import 'variables';
-  @import 'global';
+  @import 'base';
   @import 'button';
 </style>

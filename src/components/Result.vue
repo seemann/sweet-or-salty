@@ -16,7 +16,7 @@
           </div>
         </div>
       </div>
-      <seasons :show-id="result.show.ids.trakt" :show="showSeasons"></seasons>
+      <seasons :result-id="result.show.ids.trakt" :show="showSeasons"></seasons>
     </div>
   </div>
 </template>
@@ -61,13 +61,13 @@ export default {
   }
 
   .result__preview {
-    background-color: $color-quaternary;
+    background-color: $color-secondary;
     min-height: 220px;
     position: relative;
 
     /* Gradient */
     &::after {
-      background: linear-gradient(to bottom, rgba(255, 255, 255,0) 0%, rgba($color-quaternary, 1) 70%);
+      background: linear-gradient(to bottom, rgba(255, 255, 255,0) 0%, rgba($color-secondary, 1) 70%);
       bottom: 0;
       content: '';
       height: 70%;

@@ -29,8 +29,8 @@ export default {
   }
 
   .search__field {
-    background-color: lighten($color-secondary, 5%);
-    border: 2px solid transparent;
+    background-color: lighten($color-tertiary, 5%);
+    border: 1px solid transparent;
     border-radius: $border-radius-initial;
     color: $color-initial;
     font-size: 1.5em;
@@ -38,7 +38,7 @@ export default {
     width: 100%;
 
     &:focus {
-      border-color: $color-initial;
+      border-color: rgba($color-initial, 0.4);
       outline: 0;
     }
   }

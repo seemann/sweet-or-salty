@@ -25,7 +25,7 @@ export default {
     };
   },
   props: {
-    showId: {
+    resultId: {
       type: Number
     },
     show: {
@@ -33,7 +33,7 @@ export default {
     }
   },
   compiled() {
-    this.$http.get(`shows/${this.showId}/seasons?extended=episodes`).then(response => {
+    this.$http.get(`shows/${this.resultId}/seasons?extended=episodes`).then(response => {
       this.seasons = response.json();
     }, response => {
       console.error(response.statusText);
