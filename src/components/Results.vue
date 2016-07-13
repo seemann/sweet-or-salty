@@ -1,5 +1,4 @@
 <template>
-  <hint message="Nothing found" :show="!state.results.length"></hint>
   <div class="results" v-if="state.results.length">
     <result
       v-for="result in state.results"
