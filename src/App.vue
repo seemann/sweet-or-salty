@@ -4,7 +4,7 @@
 
     <div class="container">
       <router-view
-        class="view"
+        transition="fade"
         keep-alive>
       </router-view>
     </div>
@@ -13,17 +13,10 @@
 
 <script>
 import Bar from './components/Bar.vue';
-import Hint from './components/Hint.vue';
 
 export default {
   components: {
-    Bar,
-    Hint
-  },
-  data() {
-    return {
-      showHint: false
-    };
+    Bar
   }
 };
 </script>

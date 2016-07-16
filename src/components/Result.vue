@@ -1,8 +1,8 @@
 <template>
-  <div class="result" transition="slide">
+  <div class="result">
     <div class="result__item">
       <div class="result__preview">
-        <img class="result__media" :src="result.images.fanart.medium" alt="" />
+        <img class="result__object" :src="result.images.fanart.medium" alt="" />
         <div class="result__overlay">
           <div class="result__media">
             <div class="result__media__object" v-if="result.images.poster.thumb">
@@ -66,7 +66,7 @@ export default {
 
     /* Gradient */
     &::after {
-      background: linear-gradient(to bottom, rgba(255, 255, 255,0) 0%, rgba($color-secondary, 1) 70%);
+      background: linear-gradient(to bottom, rgba(255, 255, 255,0) 0%, rgba($color-bg, 1) 70%);
       bottom: 0;
       content: '';
       height: 70%;
@@ -78,7 +78,7 @@ export default {
     }
   }
 
-  .result__media {
+  .result__object {
     display: block;
     height: auto;
     max-width: 100%;

@@ -10,12 +10,10 @@
 <script>
 import store from './../store';
 import Result from './Result.vue';
-import Hint from './Hint.vue';
 
 export default {
   components: {
-    Result,
-    Hint
+    Result
   },
   data() {
     return {
