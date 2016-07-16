@@ -14,8 +14,13 @@ export default {
     };
   },
   methods: {
-    search: event => {
-      store.search(event.target.value);
+    search(event) {
+      this.$route.router.go({
+        name: 'results',
+        params: {
+          query: event.target.value
+        }
+      });
     }
   }
 };

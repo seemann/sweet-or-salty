@@ -15,20 +15,11 @@
 
 /* Slide
    =================================== */
-.slide-enter {
-  animation: fade-up 0.3s;
-}
-
-.slide-leave {
-  animation: fade-down 0.3s;
-}
-
 @keyframes fade-up {
   from {
     opacity: 0;
     transform: translate3d(0, 100%, 0);
   }
-
   to {
     opacity: 1;
     transform: none;
@@ -40,9 +31,16 @@
     opacity: 0;
     transform: translate3d(0, -100%, 0);
   }
-
   to {
     opacity: 1;
     transform: none;
   }
+}
+
+.slide-enter {
+  animation: fade-up 0.3s;
+}
+
+.slide-leave {
+  animation: fade-down 0.3s;
 }
