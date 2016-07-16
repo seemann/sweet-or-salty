@@ -29,7 +29,7 @@ export default {
   }
 
   .search__field {
-    background-color: lighten($color-tertiary, 5%);
+    background-color: lighten($color-primary, 5%);
     border: 1px solid transparent;
     border-radius: $border-radius-initial;
     color: $color-initial;

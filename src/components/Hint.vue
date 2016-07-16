@@ -19,10 +19,10 @@ export default {
 
 <style lang="sass" scoped>
   @import '../variables';
-  @import '../animations';
+  @import '../transitions';
 
   .hint {
-    background-color: $color-tertiary;
+    background-color: $color-secondary;
     border-radius: $border-radius-initial;
     font-size: 1.5rem; /* 24px */
     margin: 2em 0; /* 48px */

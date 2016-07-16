@@ -50,7 +50,7 @@ export default {
 
 <style lang="sass" scoped>
   @import './../variables';
-  @import './../animations';
+  @import './../transitions';
 
   .result {
     border: 1px solid rgba($color-initial, 0.4);

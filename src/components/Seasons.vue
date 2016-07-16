@@ -44,7 +44,7 @@ export default {
 
 <style lang="sass" scoped>
   @import '../variables';
-  @import '../animations';
+  @import '../transitions';
 
   .seasons {
     font-size: 1rem;
@@ -57,18 +57,18 @@ export default {
     width: 100%;
 
     thead > tr > th {
-      background-color: darken($color-quaternary, 40%);
+      background-color: darken($color-primary, 40%);
       padding: 0.5em 2em; /* 32px */
     }
 
     tbody > tr {
 
       &:nth-child(odd) {
-        background-color: darken($color-quaternary, 10%);
+        background-color: darken($color-primary, 10%);
       }
 
       &:nth-child(even) {
-        background-color: arken($color-quaternary, 5%)
+        background-color: arken($color-primary, 5%)
       }
 
       > td {

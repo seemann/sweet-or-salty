@@ -1,3 +1,7 @@
+/* ===================================
+   Global buttons
+   =================================== */
+
 .button {
   align-items: center;
   background: none;
@@ -27,6 +31,8 @@
   }
 }
 
+/* Variants
+   =================================== */
 .button--initial {
   background-color: $color-initial;
 

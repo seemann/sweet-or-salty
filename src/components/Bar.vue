@@ -26,7 +26,7 @@ export default {
   @import '../variables';
 
   .bar {
-    background-color: $color-tertiary;
+    background-color: $color-primary;
     color: $color-initial;
     font-size: 1rem;
     padding: 1em; /* 16px */

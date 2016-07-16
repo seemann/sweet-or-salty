@@ -1,5 +1,5 @@
 <template>
-  <div class="results" v-if="state.results.length">
+  <div class="resultsView" v-if="state.results.length">
     <result
       v-for="result in state.results"
       :result="result.show">
@@ -29,20 +29,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped>
-  @import '../variables';
-
-  .results {
-    font-size: 1rem;
-  }
-
-  .results__list {
-    list-style: none;
-    padding-left: 0;
-  }
-
-  .results__list__item {
-    padding: 1em 0; /* 16px */
-  }
-</style>

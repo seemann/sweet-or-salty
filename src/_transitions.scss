@@ -1,3 +1,9 @@
+/* ===================================
+   Global transitions
+   =================================== */
+
+/* Fade
+   =================================== */
 .fade-transition {
   transition: all 0.3s ease;
 }
@@ -7,6 +13,8 @@
   opacity: 0;
 }
 
+/* Slide
+   =================================== */
 .slide-enter {
   animation: fade-up 0.3s;
 }
