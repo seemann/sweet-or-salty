@@ -1,6 +1,6 @@
 <template>
   <div class="hint" v-if="show" transition="fade">
-    {{message}}
+    {{ message }}
   </div>
 </template>
 
