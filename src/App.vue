@@ -4,7 +4,6 @@
 
     <div class="container">
       <router-view
-        transition="fade"
         keep-alive>
       </router-view>
     </div>

@@ -3,6 +3,7 @@ import VueResource from 'vue-resource';
 import VueRouter from 'vue-router';
 import App from './App.vue';
 import ResultsView from './components/ResultsView.vue';
+import ResultDetail from './components/ResultDetail.vue';
 
 Vue.use(VueResource);
 Vue.use(VueRouter);
@@ -22,6 +23,10 @@ router.map({
   '/results/:query': {
     name: 'results',
     component: ResultsView
+  },
+  '/resultDetail/:id': {
+    name: 'resultDetail',
+    component: ResultDetail
   }
 });
 

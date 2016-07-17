@@ -1,16 +1,16 @@
 <template>
-  <div class="result">
-    <div class="result__item">
-      <div class="result__preview">
-        <img class="result__object" :src="result.images.fanart.medium" alt="" />
-        <div class="result__overlay">
-          <div class="result__media">
-            <div class="result__media__object" v-if="result.images.poster.thumb">
-              <img class="result__poster" :src="result.images.poster.thumb" />
+  <div class="resultDetail">
+    <div class="resultDetail__item">
+      <div class="resultDetail__preview">
+        <img class="resultDetail__object" :src="result.images.fanart.medium" alt="" />
+        <div class="resultDetail__overlay">
+          <div class="resultDetail__media">
+            <div class="resultDetail__media__object" v-if="result.images.poster.thumb">
+              <img class="resultDetail__poster" :src="result.images.poster.thumb" />
             </div>
-            <div class="result__media__body">
-              <h2 class="result__title">{{ result.title }}</h2>
-              <div class="result__year">{{ result.year }}</div>
+            <div class="resultDetail__media__body">
+              <h2 class="resultDetail__title">{{ result.title }}</h2>
+              <div class="resultDetail__year">{{ result.year }}</div>
               <button class="button button--primary" type="button" @click="triggerSeason()">Seasons</button>
             </div>
           </div>
@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import store from './../store';
 import Seasons from './Seasons.vue';
 
 export default {
@@ -30,11 +31,9 @@ export default {
   },
   data() {
     return {
+      state: store.state,
       showSeasons: false
     };
-  },
-  props: {
-    result: Object
   },
   methods: {
     triggerSeason() {
@@ -52,7 +51,7 @@ export default {
   @import './../variables';
   @import './../transitions';
 
-  .result {
+  .resultDetail {
     border: 1px solid rgba($color-initial, 0.4);
     border-radius: $border-radius-initial;
     color: $color-initial;
@@ -60,7 +59,7 @@ export default {
     margin: 2em 0; /* 32px */
   }
 
-  .result__preview {
+  .resultDetail__preview {
     min-height: 220px;
     position: relative;
 
@@ -78,13 +77,13 @@ export default {
     }
   }
 
-  .result__object {
+  .resultDetail__object {
     display: block;
     height: auto;
     max-width: 100%;
   }
 
-  .result__overlay {
+  .resultDetail__overlay {
     bottom: 0;
     padding: 2em; /* 32px */
     position: absolute;
@@ -92,25 +91,25 @@ export default {
     z-index: 2;
   }
 
-  .result__media {
+  .resultDetail__media {
     display: flex;
   }
 
-  .result__media__object {
+  .resultDetail__media__object {
     margin-right: 1em; /* 16px */
   }
 
-  .result__title {
+  .resultDetail__title {
     color: currentColor;
-    font-family: $font-inital;
+    font-family: $font-initial;
     font-weight: 700;
   }
 
-  .result__year {
+  .resultDetail__year {
     margin-bottom: 1em; /* 16px */
   }
 
-  .result__poster {
+  .resultDetail__poster {
     display: block;
     height: auto;
     max-width: 100px;

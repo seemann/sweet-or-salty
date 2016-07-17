@@ -1,19 +1,19 @@
 <template>
   <div class="resultsView" v-if="state.results.length">
-    <result
+    <result-item
       v-for="result in state.results"
       :result="result.show">
-    </result>
+    </result-item>
   </div>
 </template>
 
 <script>
 import store from './../store';
-import Result from './Result.vue';
+import ResultItem from './ResultItem.vue';
 
 export default {
   components: {
-    Result
+    ResultItem
   },
   data() {
     return {
