@@ -2,6 +2,8 @@
 
 > Track your loved movies and tv shows
 
+My small playground to learn Vue.js.
+
 ## Build Setup
 
 ``` bash
