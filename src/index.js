@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueResource from 'vue-resource';
 import VueRouter from 'vue-router';
 import App from './App.vue';
-import ResultsView from './components/ResultsView.vue';
+import ResultsView from './views/ResultsView.vue';
 import ResultDetail from './components/ResultDetail.vue';
 
 Vue.use(VueResource);
