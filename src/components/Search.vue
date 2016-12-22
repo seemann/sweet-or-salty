@@ -15,7 +15,7 @@ export default {
   },
   methods: {
     search(event) {
-      this.$route.router.go({
+      this.$route.router.push({
         name: 'results',
         params: {
           query: event.target.value

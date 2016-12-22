@@ -3,17 +3,17 @@
     <bar></bar>
 
     <div class="container">
-      <router-view
-        keep-alive>
-      </router-view>
+      <router-view></router-view>
     </div>
   </div>
 </template>
 
 <script>
 import Bar from './components/Bar.vue';
+import router from './components/Bar.vue';
 
 export default {
+  router: router,
   components: {
     Bar
   }

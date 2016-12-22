@@ -4,12 +4,12 @@
 
 /* Fade
    =================================== */
-.fade-transition {
+.fade-enter-active, .fade-leave-active {
   transition: all 0.3s ease;
 }
 
 .fade-enter,
-.fade-leave {
+.fade-leave-active {
   opacity: 0;
 }
 
@@ -41,6 +41,6 @@
   animation: fade-up 0.3s;
 }
 
-.slide-leave {
+.slide-leave-active {
   animation: fade-down 0.3s;
 }

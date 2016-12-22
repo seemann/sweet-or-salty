@@ -1,7 +1,9 @@
 <template>
-  <div class="hint" v-if="show" transition="fade">
-    {{ message }}
-  </div>
+  <transition name="fade">
+    <div class="hint" v-if="show">
+      {{ message }}
+    </div>
+  </transition>
 </template>
 
 <script>

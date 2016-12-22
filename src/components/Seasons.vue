@@ -1,19 +1,21 @@
 <template>
-  <div class="seasons" v-if="show" transition="fade">
-    <table class="seasons__table" v-for="season in seasons">
-      <thead>
-        <tr>
-          <th colspan="2">Season {{season.number}}</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="episode in season.episodes">
-          <td>{{episode.number}}</td>
-          <td>{{episode.title}}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  <transition name="fade">
+    <div class="seasons" v-if="show">
+      <table class="seasons__table" v-for="season in seasons">
+        <thead>
+          <tr>
+            <th colspan="2">Season {{season.number}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="episode in season.episodes">
+            <td>{{episode.number}}</td>
+            <td>{{episode.title}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </transition>
 </template>
 
 
@@ -32,7 +34,7 @@ export default {
       type: Boolean
     }
   },
-  compiled() {
+  mounted() {
     this.$http.get(`shows/${this.resultId}/seasons?extended=episodes`).then(response => {
       this.seasons = response.json();
     }, response => {

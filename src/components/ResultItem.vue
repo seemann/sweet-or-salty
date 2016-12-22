@@ -1,5 +1,5 @@
 <template>
-  <a class="resultItem" v-link="{ name: 'resultDetail', params: { id: result.ids.trakt }}">
+  <router-link :to="{ name: 'resultDetail', params: { id: result.ids.trakt }}">
     <div class="resultItem__poster" v-if="result.images.poster.thumb">
       <img :src="result.images.poster.thumb" />
     </div>
@@ -7,7 +7,7 @@
       <h2 class="resultItem__title">{{ result.title }}</h2>
       <div class="resultItem__year">{{ result.year }}</div>
     </div>
-  </a>
+  </router-link>
 </template>
 
 <script>
