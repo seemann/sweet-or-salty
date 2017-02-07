@@ -70,7 +70,7 @@ export default {
       }
 
       &:nth-child(even) {
-        background-color: arken($color-primary, 5%)
+        background-color: darken($color-primary, 5%)
       }
 
       > td {
